@@ -1,0 +1,154 @@
+.wrapper {
+    display: flex;
+    align-items: stretch;
+
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    height: 100%;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: rgb(228, 228, 228);
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+#sidebar {
+    /* don't forget to add all the previously mentioned styles here too */
+    background: rgb(0, 0, 0);
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #494949a1;
+}
+
+#sidebar ul.components {
+    padding: 10px 0;
+    border-bottom: 1px solid #525252;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+#sidebar ul li a:hover {
+    color: rgb(13, 209, 216);
+    background: rgb(117, 221, 20);
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+    background: #e4ad41;
+}
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #000000;
+}
+
+.container-fluid {
+    
+    padding-left: 0px!important;
+    
+    margin-left: -16px!important;
+}
+.search-inside{
+    width: 100%;
+  text-align: center;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 0.5px solid #ffb503;
+  border-right: none;
+  padding: 5px;
+  height: 36px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  background-color: rgba(157, 191, 175, 0)!important;
+}
+
+.searchTerm:focus{
+  color: #ffb503;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #e4ad41;
+  background: #e4ad41;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+.wrap-search {
+    padding-left:5%;
+    padding-top: 3%;
+}
+.btn-info {
+        color:black;
+    background-color: #f8c73f !important;
+    border-color:black !important;
+}
+.login-icon{
+
+color:white;
+cursor: pointer;
+} 
+.login-icon:hover {
+color:yellow;
+
+}
+
+.navbar{
+    position:absolute;
+    box-shadow: none !important;
+    padding:4.5rem 0.6rem!important;
+}
